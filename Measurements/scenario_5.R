@@ -152,7 +152,7 @@ if (length(y_score) > 0 && length(y_nsat) > 0) {
 }
 
 # -----------------------------------------------------------------------------
-# Per-bin ADE  (proportion variance p(1-p)/n -> binary-appropriate CI/p)
+# Per-bin ADE 
 # -----------------------------------------------------------------------------
 breaks <- if (exists("GLOBAL_RISK_BREAKS")) {
   GLOBAL_RISK_BREAKS
