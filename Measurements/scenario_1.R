@@ -87,8 +87,7 @@ plot_path <- file.path(out_dir, sprintf("rdd_plot_%s.png", TAG))
 png(plot_path, width = 800, height = 600)
 rdp <- rdplot(y = vt_combined$outcome, x = R, c = threshold, p = 1,
               x.label = "R (-)", y.label = "Y (-)", hide = TRUE)
-print(rdp$rdplot)   # rdplot returns a ggplot; inside a function it must be
-# printed explicitly (top-level auto-print does not apply)
+print(rdp$rdplot)   
 dev.off()
 message("Saved RDD plot to: ", plot_path)
 
