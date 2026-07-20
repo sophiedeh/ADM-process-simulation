@@ -150,7 +150,7 @@ p_scatter <- vt_not_sel %>%
   ggplot(aes(x = mid, y = mean_outcome)) +
   geom_point(color = "#E07B54") +
   geom_smooth(method = "lm", color = "#185FA5", se = TRUE) +
-  labs(x = "R (-)", y = "Y(0) (-)") +
+  labs(x = "Risk score (-)", y = "Outcome under no treatment (-)") +
   theme_minimal(base_size = 13)
 
 ggsave(file.path(out_dir, sprintf("risk_vs_outcome_%s.png", TAG)), p_scatter,
