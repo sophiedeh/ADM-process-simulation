@@ -102,7 +102,7 @@ run_simulation <- function(
 
   # ── Step 3: Human reviewer decisions ────────────────────────────────────────
   # decision_fn receives the full "selected" data frame so it can use y_exit12 
-  # for the outcome-oracle reviewer andrisk_score_log for the score-based 
+  # for the outcome-oracle reviewer and risk_score_log for the score-based 
   # reviewers. From the decision function approval probs per individuals as 
   # vector are registered.
   approval_probs          <- decision_fn(selected)
